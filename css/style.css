@@ -1,0 +1,134 @@
+/*===============================================
+Main CSS
+===============================================*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 1rem;
+}
+h1 {
+    text-transform: uppercase;
+    color: rgb(70, 68, 68);
+    font-size: 1.1em;
+    margin: 2rem auto 1rem;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: background-color .5s ease-in-out;
+}
+.card:hover {
+    background-color: rgb(255, 247, 234);
+}
+img {
+    border-radius: 50%;
+    width: 15vw;
+}
+p {
+    color: rgb(153, 152, 152)
+}
+.grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.overlay {
+    max-width: 390px;
+    width: 90%;
+    height: 20%;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(242, 237, 230);
+    border-radius: 10px;
+}
+.modal-content {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.modal-close {
+    cursor: pointer;
+    top: 10px;
+    right: 30px;
+    font-size: 1.2em;
+    color:rgb(70, 68, 68)
+}
+.hidden {
+    display: none;
+}
+hr {
+    margin: 1rem 2rem;
+}
+
+/*===============================================
+Shared Properties
+===============================================*/
+h1,
+.grid {
+    max-width: 1024px;
+}
+h2,
+p {
+    margin: .6rem;
+    font-size: .8em;
+}
+body, 
+.modal-content {
+    position: relative;
+}
+.overlay,
+.modal-close {
+    position: absolute;
+}
+.grid,
+.overlay {
+    margin: 0 auto;
+}
+
+/*===============================================
+768px Break Point
+===============================================*/
+@media screen and (min-width: 768px) {
+    .overlay {
+        width: 50%;
+        height: 40%;
+    }
+    .modal-content {
+        margin: 2.5rem 1rem;
+    }
+}
+
+/*===============================================
+1024px Break Point
+===============================================*/
+@media screen and (min-width: 1024px) {
+    img {
+        width: 6vw;
+    }
+    h2,
+    p {
+        margin: .6rem;
+        font-size: .8em;
+    }
+    .overlay {
+        width: 40%;
+        height: 60%;
+    }    
+    .modal-content {
+        width: 400px;
+        margin: 1.5rem 0;
+    }
+    hr {
+        margin: 1.2rem 2rem;
+    }
+}
