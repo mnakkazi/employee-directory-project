@@ -67,6 +67,18 @@ p {
 hr {
     margin: 1rem 2rem;
 }
+.arrows {
+    position: relative;
+}
+.prev,
+.next {
+    font-size: 2em;
+    position: absolute;
+    bottom: 90px;
+}
+.next {
+    right: 0;
+}
 
 /*===============================================
 Shared Properties

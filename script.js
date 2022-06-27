@@ -92,6 +92,29 @@ modalClose.addEventListener('click', () => {
 });
 
 /*===============================================
+Show Previous or Next Person
+===============================================*/ 
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+let currentPerson = 0;
+
+next.addEventListener('click', (e) => {
+    currentPerson++;
+    if (currentPerson > employees.length - 1) {
+        currentPerson = 0;
+    }
+    displayModal(currentPerson);
+});
+
+prev.addEventListener('click', (e) => {
+    currentPerson--;
+    if (currentPerson < 0) {
+        currentPerson = employees.length -1;
+    }
+    displayModal(currentPerson);
+});
+
+/*===============================================
 Search Box
 ===============================================*/ 
 function filteredSearch() {}
