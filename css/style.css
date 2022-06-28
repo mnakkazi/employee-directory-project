@@ -5,6 +5,7 @@ Main CSS
     box-sizing: border-box;
 }
 body {
+    background-color: rgba(244, 229, 231, 0.5);
     font-family: 'Source Sans Pro', sans-serif;
     margin: 1rem;
 }
@@ -19,20 +20,20 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid rgb(171, 171, 171);
+    border: 2px solid rgb(194, 192, 192);
     border-radius: 8px;
     padding: 1rem;
     transition: background-color .5s ease-in-out;
 }
 .card:hover {
-    background-color: rgb(255, 247, 234);
+    background-color: rgb(249, 218, 228);
 }
 img {
     border-radius: 50%;
     width: 15vw;
 }
 p {
-    color: rgb(153, 152, 152)
+    color: rgb(137, 134, 134)
 }
 .grid {
     display: grid;
@@ -47,7 +48,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(242, 237, 230);
+    background: rgb(249, 218, 227);
     border-radius: 10px;
 }
 .modal-content {
